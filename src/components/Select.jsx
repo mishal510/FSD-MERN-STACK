@@ -2,7 +2,7 @@ import { Button } from '@mui/material'
 import { brown } from '@mui/material/colors';
 import React, { useState } from 'react'
 
-const select = () => {
+const Select = () => {
     var {colour,setcolour}=useState();
 
     const isred=() =>{
@@ -25,4 +25,4 @@ const select = () => {
   )
 }
 
-export default select
+export default Select

@@ -8,6 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Grid } from '@mui/material';
 
 const Product = () => {
   var [product, setproduct] = useState([]);
@@ -23,10 +24,14 @@ const Product = () => {
   }, []);
 
   return (
-    <Grid container spacing=(2)>
+    
     <div>
+        <Grid container spacing={2}>
+
+
       {product.map((det) => {
         return (
+            <Grid>
           <Card key={det.id} sx={{ maxWidth: 345 }}>
             <CardMedia
               sx={{ height: 140 }}
@@ -43,10 +48,12 @@ const Product = () => {
               <Button size="small">Learn More</Button>
             </CardActions>
           </Card>
+          </Grid>
         )
       })}
+      </Grid>
     </div>
-  );
-};
+  )
+}
 
 export default Product;

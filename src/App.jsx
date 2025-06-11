@@ -24,7 +24,7 @@ function App() {
         <Route path='/Signup' element={<Signup/>} />
          <Route path='/N' element={<Name/>}/>
          <Route path='/m' element={<Counter/>}/>
-         <Route path='/colour'element={<select/>}/>
+         <Route path='/colour'element={<Select/>}/>
          <Route path='/user'element={<User/>}/>
          <Route path='/P'element={<Product/>}/>
       </Routes>
